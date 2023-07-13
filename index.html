@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download Anything</title>
+    <style>
+    body {
+  background: #07c
+    url(https://source.unsplash.com/qDbaQGEwPtI/2400x1823)
+    center / cover no-repeat fixed;
+  font: 1em/1.618 Nunito, sans-serif;
+}
+form input:valid ~ button{
+  opacity: 1;
+  pointer-events: auto;
+}
+    </style>
+  </head>
+
+  <body  class="w-full h-screen relative flex justify-center items-center p-5"></body>
+    
+      <div
+        class="max-w-xl w-full 
+        rounded-2xl
+        text-[#1A2421]
+        backdrop-blur-lg
+        [ p-8 md:p-10 lg:p-10 ]
+        [ bg-gradient-to-b from-white/60 to-white/30 ]
+        [ border-[1px] border-solid border-white border-opacity-30 ]
+        [ shadow-black/70 shadow-2xl ] flex flex-col gap-2"
+        
+      >
+      <header class="flex flex-col gap-4">
+        <h1 class="text-3xl font-semibold">File Downloader</h1>
+        <p class="text-1xl">Paste url of images,video, or pdf to download</p>
+    </header> 
+    <form action="#" class="flex flex-col gap-2">
+        <input
+          type="text"
+          class="w-full rounded-lg leading-none focus:outline-none placeholder-black/50 
+          [ transition-colors duration-200 ] px-5 py-6 my-3
+          [ bg-black/20 focus:bg-black/25 ] 
+          [ text-[#333] focus:text-black ]"
+          placeholder="Paste file url"
+          required
+        />
+        <button
+          class="p-5 rounded-md bg-[#141d86] text-white font-semibold text-xl hover:bg-[#1c28b4] opacity-70 pointer-events-none" 
+        >
+          Download File
+        </button>
+    </form>
+      </div>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
